@@ -16,4 +16,4 @@ jobs:
     - name: build_push_tag of main
       run: |
              sudo docker build -t niskarsha10/nodejsimage:latest .
-             sudo docker run -it -d -p 5000:5000 nodejsimage
+
