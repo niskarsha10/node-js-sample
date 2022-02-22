@@ -1,10 +1,9 @@
-name: Docker Image CI
-
+name: Node CI
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
 
@@ -18,3 +17,4 @@ jobs:
       run: |
         docker build -t niskarsha10/nodejsimage -f Dockerfile .
         docker push niskarsha10/nodejsimage
+        docker run nodejsimage
